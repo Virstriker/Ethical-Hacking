@@ -34,23 +34,25 @@ function Whoverh() {
         WL.style.color = "white";
         GL.style.backgroundColor = "red";
         GL.style.color = "white";
+        IMAGE.style.display = "none";
     }
     // function Bhoverl(){
         //     BR.style.display = "none";
         //     WR.style.display = "block";
         // }
-function Ghoverh() {
-    GR.style.display = "block";
-    WR.style.display = "none";
-    BR.style.display = "none";
-    GL.style.backgroundColor = "white";
-    GL.style.color = "black";
-    WL.style.backgroundColor = "red";
-    WL.style.color = "white";
-    BL.style.backgroundColor = "red";
-    BL.style.color = "white";
-    
-}
+        function Ghoverh() {
+            GR.style.display = "block";
+            WR.style.display = "none";
+            BR.style.display = "none";
+            GL.style.backgroundColor = "white";
+            GL.style.color = "black";
+            WL.style.backgroundColor = "red";
+            WL.style.color = "white";
+            BL.style.backgroundColor = "red";
+            BL.style.color = "white";
+            IMAGE.style.display = "none";
+            
+        }
 function blockleave() {
     GR.style.display = "none";
     WR.style.display = "none";

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="\css\navigation.css">
+    <link rel="stylesheet" href="\css\Service.css">
+</head>
+<body>
+    <div class="navigation">
+        <nav>
+            <div id="logo">
+                <img src="pngegg.png" alt="">
+                <span>ETL</span>
+            </div>
+            <div id="navButton">
+                <a href="\EthicalHacking.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="\html\Service.html">Services</a>
+                <a href="#">Pages</a>
+                <a href="#">Blog</a>
+                <a href="\html\ContactUs.html">Contact Us</a>
+                <a href="\html\login.html">Log In</a>
+            </div>
+        </nav>
+    </div>
+    <div id="container1">
+        <div id="up">
+            <p>5 Phases of Ethical Hacking</p>
+            <p>These are the phases used by a white hat hacker to test an organization’s network. To put it simply, an attacker uses this approach to breach the network, while the ethical hacker uses it to protect it.</p>
+        </div>
+        <div id="down">
+            <div id="up101">
+                <div id="box101" class="box1" onclick="secondDisplay(),p1()">
+                    <a >Reconnaissance</a>
+                </div>
+                <div id="box102" class="box1" onclick="secondDisplay(),p2()">
+                    <a >Scanning</a>
+                </div>
+                <div id="box103" class="box1" onclick="secondDisplay(),p3()">
+                    <a >Gain Access</a>
+                </div>
+            </div>
+            <div id="down101">
+                <div id="box104" class="box2" onclick="secondDisplay(),p4()">
+                    <a >Maintain Access</a>
+                </div>
+                <div id="box105" class="box2" onclick="secondDisplay(),p5()">
+                    <a >Cover Tracks</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container2">
+        <div id="stages">
+            <span id="part1" onclick="p1()">Reconnaissance</span>
+            <span id="Part2" onclick="p2()">Scanning</span>
+            <span id="part3" onclick="p3()">Gain Access</span>
+            <span id="part4" onclick="p4()">Maintain Access</span>
+            <span id="part5" onclick="p5()">Cover Tracks</span>
+        </div>
+        <div id="discryption">
+            <div id="part101" class="part">
+                <p>Reconnaissance</p>
+                <p>Reconnaissance, also known as the preparatory phase, is where the hacker gathers information about a target before launching an attack and is completed in phases prior to exploiting system vulnerabilities. One of the first phases of Reconnaissance is dumpster diving. It is during this phase that the hacker finds valuable information such as old passwords, names of important employees (such as the head of the network department), and performs an active reconnaissance to know how the organization functions. As a next step, the hacker completes a process called footprinting to collect data on the security posture, reduces the focus area such as finding out specific IP addresses, identifies vulnerabilities within the target system, and finally draws a network map to know exactly how the network infrastructure works to break into it easily. Footprinting provides important information such as the domain name, TCP and UDP services, system names, and passwords. There are also other ways to do footprinting, including impersonating a website by mirroring it, using search engines to find information about the organization, and even using the information of current employees for impersonation.</p>
+                <br>
+                <p>Information Gathering and getting to know the target systems is the first process in ethical hacking. Reconnaissance is a set of processes and techniques (Footprinting, Scanning & Enumeration) used to covertly discover and collect information about a target system.</p>
+                <br>
+                <p>During reconnaissance, an ethical hacker attempts to gather as much information about a target system as possible, following the seven steps listed below </p>
+            </div>
+            <div id="part102" class="part">
+                <p>Scanning</p>
+                <p>In this phase, the hacker identifies a quick way to gain access to the network and look for information. There are three methods of scanning: pre-attack, port scanning/sniffing, and information extraction. Each of these phases demonstrates a specific set of vulnerabilities that the hacker can utilize to exploit the system's weaknesses. The pre-attack phase is where the hacker scans the network for specific information based on the information gathered during reconnaissance. The port scanner or sniffing phase is where scanning includes the use of dialers, port scanners, vulnerability scanners, and other data-gathering equipment. The information extraction phase is where the attackers collect information about ports, live machines and OS details to launch an attack. </p>
+                <br>
+                <p>
+                    There are sevral tool used for scanning the network. Here are some tools that are open source
+                </p>
+                <ul>
+                    <li>Nmap</li>
+                    <li>Wireshark</li>
+                    <li>Netcat</li>
+                </ul>
+            </div>
+            <div id="part103" class="part">
+                <p>Gain Access</p>
+                <p>The hacker gains access to the system, applications, and network, and escalates their user privileges to control the systems connected to it.</p>
+            </div>
+            <div id="part104" class="part">
+                <p>Maintain Access</p>
+                <p>Here, the hacker secures access to the organization’s Rootkits and Trojans and uses it to launch additional attacks on the network.</p>
+            </div>
+            <div id="part105" class="part">
+                <p>Cover Tracks</p>
+                <p>Once the hacker gains access, they cover their tracks to escape the security personnel. They do this by clearing the cache and cookies, tampering the log files, and closing all the open ports. This step is important because it clears the system information making hacking a great deal harder to track.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/Service.js"></script>
+</body>
+</html>  
