@@ -1,0 +1,192 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+/* Navigation css start -------------------------------------------------------------------------------------------*/
+
+
+
+/* navigrtion css End -------------------------------------------------------------------------------------------*/
+/* Container1 css Start -------------------------------------------------------------------------------------------*/
+
+#container1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+#up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#up p:nth-child(1){
+    font-size: xx-large;
+    margin: 20px 0px;
+    text-shadow: 0px 0px 10px red;
+    word-spacing: 30px;
+}
+#down{
+    display: flex;
+    flex-direction: column;
+}
+#up101{
+    display: flex;
+    flex-direction: row;
+    
+}
+#down101{
+    display: flex;
+    flex-direction: row;
+}
+.box1{
+    /* border: 2px solid red; */
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 10px 10px 10px white;
+    border-radius: 10px;
+    width: 20%;
+    height: 200px;
+    margin: 80px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.box1:hover{
+    background-color: rgb(255, 157, 157);
+    color: black;
+    box-shadow: 10px 10px 10px black;
+}
+.box2{
+    /* border: 2px solid blue; */
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 10px 10px 10px white;
+    border-radius: 10px;
+    width: 30%;
+    height: 200px;
+    margin: 0px 10%;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    transition: all;
+    transition-duration: 0.5s;
+}
+.box2:hover{
+    background-color: rgb(255, 157, 157);
+    color: black;
+    box-shadow: 10px 10px 10px black;
+}
+.box1 a,.box2 a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Container1 css end -------------------------------------------------------------------------------------------*/
+/* Container2 css Start -------------------------------------------------------------------------------------------*/
+body{
+    background-color: rgb(22, 22, 22);
+}
+#container2{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+#stages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+#stages span{
+    background-color: black;
+    font-size: larger;
+    width: 200px;
+    padding: 15px 10px;
+    text-align: center;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.5s;
+}
+#stages span:hover{
+    position: relative;
+    left: 10px;
+    background-color: white;
+    color: black;
+}
+#descryption{
+    width: 80%;
+    position: relative;
+    left: 6%;
+}
+.part p, ul{
+    font-size: large;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.part p:nth-child(1){
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 800;
+    box-shadow: 0px 0px 20px red;
+    padding: 10px 0px;
+    /* background-color: red; */
+    animation: read;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transition: all;
+    transition-duration: 0.5s;
+}
+@keyframes read {
+    from{
+       background-color: rgb(255, 65, 65); 
+    }
+    to{
+        background-color: red;
+    }
+}
+/* descryptin css */
+#part101 .p1{
+    color: red;
+    font-size: xx-large;
+    text-shadow: 0px 0px 10px green;
+}
+#part102 .p1{
+    color: red;
+    font-size: xx-large;
+    text-shadow: 0px 0px 10px green;
+}
+#part103 .p1{
+    color: red;
+    font-size: xx-large;
+    text-shadow: 0px 0px 10px green;
+}
+#part104 .p1{
+    color: red;
+    font-size: xx-large;
+    text-shadow: 0px 0px 10px green;
+}
+#part105 .p1{
+    color: red;
+    font-size: xx-large;
+    text-shadow: 0px 0px 10px green;
+}
+
+#serviceh{
+    color: antiquewhite;
+    font-size: 25px;
+}
+/* Container2 css end -------------------------------------------------------------------------------------------*/

@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethical Hacking Learinng</title>
-    <link rel="stylesheet" href="\css\Hacking.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="Hacking.css">
 </head>
 
 <body>
@@ -18,13 +19,13 @@
                 <span>ETL</span>
             </div>
             <div id="navButton">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Services</a>
+                <a href="\EthicalHacking.html">Home</a>
+                <a href="\aboutUs\aboutUs.html">About Us</a>
+                <a href="services\Service.html">Services</a>
                 <a href="#">Pages</a>
                 <a href="#">Blog</a>
-                <a href="\html\ContactUs.html">Contact Us</a>
-                <a href="\html\login.html">Log In</a>
+                <a href="contectUs\ContactUs.html">Contact Us</a>
+                <a href="login\login.html">Log In</a>
             </div>
         </nav>
     </div>
@@ -96,8 +97,58 @@
             </div>
             
         </div>
+
     </div>
-    <script src="\js\hacking.js"></script>
+    <input type="text" name="text" id="text" placeholder="Add Your Comment">
+    <button onclick="add()" id="btn123">Add</button>
+    <a href="EthicalHacking.html" onclick="rs()" style="color: black; text-decoration: none;">reset</a>
+    <div id="chat">
+        <!-- <p class="p1"> hello</p> -->
+    </div>
+    <script>
+        // localStorage.setItem("total101","0");
+        let tot = localStorage.getItem("total101");
+        let a = "hello101";
+        let b = localStorage.getItem(a);
+        let zero = 0;
+        // localStorage.setItem(a, zero);
+        let i;
+        let kk = 0;
+        var ok = "A";
+        let arrey = ["aa", "bb", "cc", "dd", "ee", "ff", "gg", "hh", "ii", "jj" , "kk" , "ll" , "mm"];
+
+        for (i = 0; i < b; i++) {
+            const div = document.getElementById("chat");
+            const par = document.createElement("p");
+            par.className = "p1";
+            let valu1 = localStorage.getItem(arrey[i]);
+            par.textContent = "UNKNOWN USER:  " + valu1;
+            div.appendChild(par);
+            kk = kk + 1;
+        }
+        function add() {
+            let valu = document.getElementById("text").value;
+            let valu1 = document.getElementById("text");
+            const div = document.getElementById("chat");
+            const par = document.createElement("p");
+            localStorage.setItem(arrey[kk], valu);
+            par.className = "p1";
+            par.textContent = "UNKNOWN USER:  "+valu;
+            div.appendChild(par);
+            kk = kk + 1;
+            localStorage.setItem(a, kk);
+            valu1.value = null;
+            // localStorage.setItem(a,b);
+
+        }
+        function rs() {
+            let aa = 0;
+            localStorage.setItem(a, aa);
+
+        }
+        alert(b);
+    </script>
+    <script src="hacking.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="Service.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <nav>
+            <div id="logo">
+                <img src="pngegg.png" alt="">
+                <span>ETL</span>
+            </div>
+            <div id="navButton">
+                <a href="\EthicalHacking.html">Home</a>
+                <a href="\aboutUs\aboutUs.html">About Us</a>
+                <a href="Service.html">Services</a>
+                <a href="#">Pages</a>
+                <a href="#">Blog</a>
+                <a href="\contectUs\ContactUs.html">Contact Us</a>
+                <a href="\login\login.html">Log In</a>
+            </div>
+        </nav>
+    </div>
+    <div id="container1">
+        <div id="up">
+            <p>5 Phases of Ethical Hacking</p>
+            <p>These are the phases used by a white hat hacker to test an organization’s network. To put it simply, an
+                attacker uses this approach to breach the network, while the ethical hacker uses it to protect it.</p>
+        </div>
+        <div id="down">
+            <div id="up101">
+                <div id="box101" class="box1" onclick="secondDisplay(),p1()">
+                    <a>Reconnaissance</a>
+                </div>
+                <div id="box102" class="box1" onclick="secondDisplay(),p2()">
+                    <a>Scanning</a>
+                </div>
+                <div id="box103" class="box1" onclick="secondDisplay(),p3()">
+                    <a>Gain Access</a>
+                </div>
+            </div>
+            <div id="down101">
+                <div id="box104" class="box2" onclick="secondDisplay(),p4()">
+                    <a>Maintain Access</a>
+                </div>
+                <div id="box105" class="box2" onclick="secondDisplay(),p5()">
+                    <a>Cover Tracks</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="container2">
+        <div id="stages">
+            <span id="part1" onclick="p1()">Reconnaissance</span>
+            <span id="Part2" onclick="p2()">Scanning</span>
+            <span id="part3" onclick="p3()">Gain Access</span>
+            <span id="part4" onclick="p4()">Maintain Access</span>
+            <span id="part5" onclick="p5()">Cover Tracks</span>
+        </div>
+        <div id="descryption">
+            <div id="part101" class="part">
+                <p>Reconnaissance</p>
+                <p>Reconnaissance, also known as the preparatory phase, is where the hacker gathers information about a
+                    target before launching an attack and is completed in phases prior to exploiting system
+                    vulnerabilities. One of the first phases of Reconnaissance is dumpster diving. It is during this
+                    phase that the hacker finds valuable information such as old passwords, names of important employees
+                    (such as the head of the network department), and performs an active reconnaissance to know how the
+                    organization functions. As a next step, the hacker completes a process called footprinting to
+                    collect data on the security posture, reduces the focus area such as finding out specific IP
+                    addresses, identifies vulnerabilities within the target system, and finally draws a network map to
+                    know exactly how the network infrastructure works to break into it easily. Footprinting provides
+                    important information such as the domain name, TCP and UDP services, system names, and passwords.
+                    There are also other ways to do footprinting, including impersonating a website by mirroring it,
+                    using search engines to find information about the organization, and even using the information of
+                    current employees for impersonation.</p>
+                <br>
+                <p>Information Gathering and getting to know the target systems is the first process in ethical hacking.
+                    Reconnaissance is a set of processes and techniques (Footprinting, Scanning & Enumeration) used to
+                    covertly discover and collect information about a target system.</p>
+                <br>
+                <p>During reconnaissance, an ethical hacker attempts to gather as much information about a target system
+                    as possible, following the seven steps listed below </p>
+                <p class="p1">Active vs. Passive Reconnaissance</p>
+                <p>MITRE ATT&CK, a popular knowledge base for beginners and security professionals, defines
+                    reconnaissance as a fundamental tactic that leverages the “techniques that involve adversaries
+                    actively or passively gathering information that can be used to support targeting.”<br>
+
+                    That valuable information is then used to aid further actions, which might involve attacking a
+                    vulnerability or additional reconnaissance work. <br><br>
+
+                    Reconnaissance is a critical phase in the adversary cycle. It’s not uncommon for hackers to spend
+                    much more time on the pre-attack than on the actual attack. And wrong or incomplete reconnaissance
+                    can result in a massive failure for the attackers.
+                    <br><br>
+                    There are two approaches for reconnaissance: Active and passive. Pentesters often combine these two
+                    approaches to assess vulnerabilities and prevent harmful exploitation.
+                    <br><br>
+                    Ping probes, port scanning, or traceroute are practical examples of active reconnaissance. The
+                    attackers directly interact with the targeted machines to enumerate exploitable data.
+                    <br><br>
+                    Passive reconnaissance is the opposite. The attackers do not engage and instead collect data
+                    indirectly, using techniques such as physical observation around buildings, eavesdropping on
+                    conversations, finding papers with logins/passwords, Google dorks, open source intelligence (OSINT),
+                    advanced Shodan searches, WHOIS data, and packet sniffing.
+                </p><br>
+                <p class="p1">What Data Do Hackers Collect?</p>
+                <br>
+                <p>MITRE has identified a number of reconnaissance techniques used by attackers to collect actionable
+                    information, such as: </p>
+                <br>
+                <ul>
+                    <li>
+                        Active IP addresses, hostnames, open ports, certificates, server banners, gateways, and routers
+                    </li>
+                    <li>
+                        Credentials, emails, employee names, roles, departments/divisions, and physical location
+                    </li>
+                    <li>
+                        Antivirus and EDR tools, SIEM systems (security information and event management), security
+                        vendors, software, hardware, firmware, and operating systems
+                    </li>
+                    <li>
+                        Domain names, subdomains, CDN, mail servers, and other hosts
+                    </li>
+                    <li>
+                        Public WHOIS data such as DNS name servers, IP blocks, and contact information
+                    </li>
+                    <li>
+                        Financial data and intellectual property
+                    </li>
+                    <li>
+                        Purchased data from reputable sources or black markets
+                    </li>
+                </ul><br>
+                <p>
+                    While many of these data types would likely require a direct interaction such as active scanning,
+                    it’s still possible to use the results of a previous active scan in a passive analysis, for example,
+                    by using a dedicated search engine such as Shodan.
+
+                    Sometimes, hackers only need Google and motivation to find vulnerabilities to exploit.
+
+                    Corporate websites or apps can reveal details about the business relationships, the supply chain,
+                    and other sensitive elements. Adversaries can also leverage social media to stalk victims and
+                    collect precious information.
+
+                </p>
+                <!-- part 1 end -->
+            </div>
+            <div id="part102" class="part">
+                <p>Scanning</p>
+                <p>In this phase, the hacker identifies a quick way to gain access to the network and look for
+                    information. There are three methods of scanning: pre-attack, port scanning/sniffing, and
+                    information extraction. Each of these phases demonstrates a specific set of vulnerabilities that the
+                    hacker can utilize to exploit the system's weaknesses. The pre-attack phase is where the hacker
+                    scans the network for specific information based on the information gathered during reconnaissance.
+                    The port scanner or sniffing phase is where scanning includes the use of dialers, port scanners,
+                    vulnerability scanners, and other data-gathering equipment. The information extraction phase is
+                    where the attackers collect information about ports, live machines and OS details to launch an
+                    attack. </p>
+                <br>
+                <p class="p1">What is Network Scanning?</p>
+                <p>Network Scanning is the procedure of identifying active hosts, ports and the services used by the
+                    target application. Suppose you are an Ethical Hacker and want to find vulnerabilities in the
+                    System, you need a point in the System that you can try to attack. Network Scanning for Ethical
+                    Hacking is used to find out these points in the system that a Black Hat Hacker can use to hack the
+                    network. And then the respective teams work on improving the security of the network. If you are
+                    excited to know more about Ethical hacking, join the Ethical Hacking Course Online today.</p><br>
+                <p>Every Organization has a Network. This network could be an internal network which consists of all the
+                    systems connected with each other, or it can be a network that’s connected to the internet. In
+                    either case, to hack the network, you will have to find a vulnerable point in the network that can
+                    be exploited. Network Scanning is used to find out such points in the network.</p><br>
+                <p class="p1">How is Network Scanning different from Reconnaissance?<br></p>
+                <p>Think of it like this: You are an army officer and you and your team are planning to attack a
+                    terrorist lair. You have found out the location of the lair and details about the surroundings and
+                    also found ways to send the team to the lair. You can consider all this as the information you’ve
+                    gathered using Reconnaissance. Now you have to find a point through which you can enter the lair and
+                    attack the enemy. This is Network Scanning.<br></p>
+                <p>In simple terms, Reconnaissance is used to gather information and understand your target, and Network
+                    Scanning is a method used to find possible vulnerable points in the network through which you can
+                    hack the network.<br></p>
+                <p>Depending on what kind of information the Scan identifies, Network Scanning can be classified into
+                    different types.<br></p>
+                <p class="p1">Types of Network Scanning for Ethical Hacking<br></p>
+                <p>Network Scanning can be classified into two main categories:<br></p>
+                <ul>
+                    <li>Port Scanning</li>
+                    <li>Vulnerability Scanning</li>
+                </ul>
+                <p>Port Scanning--> <br></p>
+                <p>As the name suggests, Port Scanning is a process used to find out active ports on the network. A Port
+                    Scanner sends client requests to the range of ports on the target network and then saves the details
+                    about the ports that send a response back. This is how active ports are found.<br></p>
+                <p>There are different types of Port Scanning. Below is a list of some of the most used ones:<br></p>
+                <ul>
+                    <li>TCP scanning</li>
+                    <li>SYN scanning</li>
+                    <li>UDP scanning</li>
+                    <li>ACK scanning</li>
+                    <li>Window scanning</li>
+                    <li>FIN scanning</li>
+                </ul>
+                <p>Vulnerability Scanning--> <br></p>
+                <p>Vulnerability Scanning is a type of Network Scanning for Ethical Hacking used to find out weaknesses
+                    in the network. This type of scanning identifies vulnerabilities that occur due to poor programming
+                    or misconfiguration of the network.<br></p>
+                <p>Now that you know what Network Scanning is, I will introduce you to some tools and tell you how to
+                    use them for Network Scanning.<br></p>
+            </div>
+            <div id="part103" class="part">
+                <p>Gain Access <br></p>
+                <p>The hacker gains access to the system, applications, and network, and escalates their user privileges
+                    to control the systems connected to it. <br> </p>
+                <!-- newwwwwww coppyy addedd scannn -->
+
+                <p>In this section, we are going to look at gaining access to the computer device. The computer device
+                    means any electric device like a phone, a laptop, a TV, a network, a router, a website, a server.
+                    Each device has an operating system, and they have the program installed on these operating systems.
+                    We will look at how to gain access to the computers. In this example, we are going to use a
+                    computer. We are going to have a Linux device hacker, and we are going to have a window device
+                    target. We can apply the same concepts if we are targeting a web server, a laptop or a phone, but we
+                    will be considering them all just like a normal computer. We can set up a web server on our
+                    computer, we can make it look and act like a website, or even make it act like a TV, or for that
+                    matter, anything we want. TVs and all such things are just simple computers with less complicated
+                    hardware in them. <br> </p>
+
+                <p class="p1"> Server side <br></p>
+
+                <p>Server-side attack does not require any user interaction. These attacks can be used with the web
+                    servers. We can also use them against a normal computer that people use every day. We are going to
+                    have a computer, and we will see how we can gain access to that computer without the need for the
+                    user to do anything. This attack mostly applies to devices, applications, and web servers that do
+                    not get used much by people. Basically, people configure them, and then they run automatically. All
+                    we have is an IP. Now, we will see how we can test the security and gain access to that computer
+                    based on that IP. Various type of server-side attacks includes buffer overflow, SQL injection, and
+                    denial-of-service attacks. <br> </p>
+
+                <br>
+
+                <p class="p1"> client side <br></p>
+
+                <p>The second approach we will try is the client-side attack. This approach requires the client who uses
+                    that computer to do something. It involves a number of things like opening a picture, opening a
+                    Trojan, or installing an update. We are going to learn how to create backdoors, how to create
+                    Trojan, how to use social engineering to make the target person do something so that we will gain
+                    access to their computer. In this case, information gathering is going to be crucial, because we
+                    actually need to know the person that we are targeting. The various type of client-side attacks
+                    includes session fixation, content spoofing, and cross-site scripting. <br> </p>
+
+                <p class="p1"> Post-exploitation <br> </p>
+
+                <p>
+                    Once we get access to the target computer, we will see what we can do after we gain access to this
+                    computer. This could involve a client-side exploit, server-side exploit, or even just physical
+                    access, where the victim leaves their desk, and we get in. In this section, we are going to look at
+                    what we can do once we have access to the target. We will also see how we can further exploit that
+                    target and increase our privileges, or target other computers in the same place. <br>
+                </p>
+                <br>
+                <hr>
+
+                <p>Gaining access attack is the second part of the network penetration testing. In this section, we will
+                    connect to the network. This will allow us to launch more powerful attacks and get more accurate
+                    information. If a network doesn't use encryption, we can just connect to it and sniff out
+                    unencrypted data. If a network is wired, we can use a cable and connect to it, perhaps through
+                    changing our MAC address. The only problem is when the target use encryption like WEP, WPA, WPA2. If
+                    we do encounter encrypted data, we need to know the key to decrypt it, that's the main purpose of
+                    this chapter.
+                    <br>
+                    <br>
+                    If the network uses encryption, we can't get anywhere unless we decrypt it. In this section, we will
+                    discuss that how to break that encryption and how to gain access to the networks whether they use
+                    WEP/WPA/WPA2.
+                    <br>
+                    <br>
+                    This section will cover the following topics: <br>
+                </p>
+
+                <ul>
+                    <li>Basic WEP cracking</li>
+                    <li>WEP Introduction</li>
+                    <li>Fake authentication attack</li>
+                    <li>ARP request replay</li>
+                    <li>WPA theory</li>
+                    <li>Handshake theory</li>
+                    <li>Capturing handshakes</li>
+                    <li>Creating wordlists</li>
+                    <li>Wordlist cracking</li>
+                    <li>Securing network from attacks</li>
+                </ul>
+
+                <p class="p1"> The 4 Phases of Hacking: Gaining Access <br></p>
+                <br>
+                <h3 id="serviceh">Social Engineering : </h3>
+                <br>
+                <p>Social Engineering is the term used by hackers to refer to tricking a human into giving them access,
+                    usually by handing over log-in credentials. Although this sounds like an old-fashioned scam, it can
+                    be quite sophisticated. More importantly, it can also be quite effective.
+
+                    Cybersecurity analysts estimate that over 80% of attacks are launched using stolen credentials. Once
+                    an attacker has the user ID and password of a victim, it’s a simple matter to log in and do what
+                    they wish inside the system. Of course, no one would willingly hand over their passwords to a
+                    hacker, but it happens frequently.
+
+                    The simplest form of social engineering is to simply impersonate someone in authority and ask for
+                    credentials. To do this, hackers will call into an organization and ask to be transferred to someone
+                    else (which can help hide the fact that a call is from an outside line). Then, the hacker
+                    impersonates an IT staffer trying to troubleshoot a problem. To fool an employee, the hacker needs
+                    to take a few steps:
+                    <br>
+                    <br>
+                    First, the hacker needs to have some information about the organization and/or the employee to use
+                    as context. This creates credibility. For example, they may say, “Joe Jones asked me to look into
+                    this personally," knowing that Joe Jones is the COO of the company.
+                    <br>
+                    <br>
+                    Next, the scammer needs to create a crisis. For example, they may say “I am in so much trouble, I’m
+                    afraid my boss will be angry if I don’t get this fixed immediately…” On the other hand, if they
+                    don’t think the person will be empathetic, they may say “Someone was surfing some shopping sites on
+                    this computer, which is against company policy. We have an audit coming up next week, and I don’t
+                    want you to get into trouble. Allow me to delete the history for you." After that, the scammer will
+                    ask the employee to do some small task, such as open a command window and type “netstat." This fills
+                    the screen with technical jargon which is used to frighten an employee.
+                    <br>
+                    <br>
+                    Finally, when the hook is set, the scammer asks for the employee’s ID and password to continue
+                    fixing the problem (usually right before lunch or at the end of the day when the employee wants to
+                    leave). This is only one approach, but there are many other ways to fool employees by impersonating
+                    a vendor, customer, or executive.
+                    <br>
+                    <br>
+                </p>
+                <br>
+                <h3 id="serviceh">Website Hacking :</h3>
+                <br>
+                <p>Perhaps the oldest and most well-known cybersecurity attack is to hack into a website, and there are
+                    many ways to do it. It’s a very broad topic, but some of the more common types of attacks will be
+                    outlined here.
+                    <br>
+                    <br>
+                    First, one of the most obvious ways to hack into a website is to look at the URL and observe the
+                    changes as the user traverses pages the website. In simple websites, you’ll notice that links on the
+                    website are really just tracing a directory structure. Many websites can be hacked simply by putting
+                    other information into the URL bar in the browser and experimenting.
+                    <br>
+                    <br>
+                    A famous travel website was hacked when attackers noticed the user number in the URL at the top of
+                    the browser. By simply putting other numbers in, they could see the accounts of other users. Of
+                    course, trial and error can be tedious, so many hackers use tools like URL fiddlers to experiment
+                    for them automatically. Hackers also use tools like Burpsuite to customize their responses to
+                    webforms and insert intentional errors to cause the website controls to fail.
+                    <br>
+                    <br>
+                    Many websites use a database (such as a SQL database) backend to store information. Poorly written
+                    websites often include the database commands in the URL links where they are visible, or directly
+                    from fields in forms. Using a technique called SQL injection, a hacker can add additional database
+                    commands which get passed directly through the webserver to the database.<br>
+                </p>
+                <br>
+                <br>
+                <h3 id="serviceh">
+                    Sophisticated Penetration</h3>
+                <br>
+                <p> Another way to hack into an organization is to use sophisticated attack tools to penetrate networks
+                    and directly attack servers and computers. This is probably most similar to the hacker approaches
+                    shown on TV and movies, where the attacker, types a few keys and announces, “I’m in!”
+                    <br>
+                    <br>
+                    In reality, it's not so simple, but there are techniques for doing this. If an attacker is
+                    physically close, they may be able to use a tool like Aircrack-NG to hack into a WiFi access
+                    wireless network to gain access to the network. Even better, if an attacker can get inside the
+                    building briefly to install a device (called a turtle) to call back out to them later, access is
+                    easy. If no local access is possible, attackers still have other methods to penetrate an
+                    organization.
+                    <br>
+                    <br>
+                    By scanning an organization, attackers may locate machines with known vulnerabilities that can be
+                    exploited. Often, this is simply an old, forgotten computer that has not been updated and patched.
+                    If an attacker can scan it, they can use attacks like buffer overflows or exploit weaknesses in
+                    protocols like SMB and RDP to get access to the machine. Once they get into the machine, the
+                    attacker can install additional software to launch attacks against other machines in the
+                    network.<br>
+                </p>
+                <br>
+                <br>
+                <h3 id="serviceh">
+                    Hackers Will Exploit Security Flaws </h3>
+                <br>
+                <p>While the technical details have been omitted here (for obvious security reasons) the message is
+                    clear. It’s just not that difficult for attackers to gain access to a network or computer,
+                    especially if it’s not been protected adequately. Typical protections include malware and virus
+                    detection, firewalls and intrusion detection, as well as strict policies on software patching and
+                    updates.
+                    <br>
+                    <br>
+                    Security engineers can take many other steps to reduce the risk of attack and intrusion. However, it
+                    takes good training to do that.<br>
+                </p>
+                <br>
+                <br>
+                <!-- enddedddddddddd -->
+            </div>
+
+
+
+            <div id="part104" class="part">
+                <p>Maintain Access <br></p>
+                <p>Here, the hacker secures access to the organization’s Rootkits and Trojans and uses it to launch
+                    additional attacks on the network. <br></p>
+
+                <p class="p1"> The Concept of Maintaining Access <br></p>
+                <p>When a system is compromised, the attacker is given temporary access to it (not including compromised
+                    management services such as SSH, telnet, etc.). If the system were to power cycle or the gained
+                    access be interrupted by some means, access would be lost. But, if quick action is taken by the
+                    attacker upon initial compromise, access can be maintained or persistent.
+                    <br>
+                    <br>
+                    This persistent access often takes the form of a backdoor, which starts along with the system to
+                    give the attacker access without need for further exploitation. Launching a high number of exploits
+                    in an attempt to gain access to the same system is likely to alert an admin (a good one at least),
+                    and might lock you out for good. So, persistent access is definitely the way to go. <br>
+                </p>
+                <p class="p1"> Penetration testing: maintaining access <br></p>
+                <p>Once a pentester manages to gain access to the target system, he should work hard to keep his boat
+                    afloat, metaphorically speaking. He can choose either to use the hijacked system as a launching-pad
+                    (i.e., to be part of a botnet for DDoS attacks or spam campaigns), at this moment attack, scan and
+                    exploit other systems, or keep on exploiting the current system in stealth mode. Both actions can
+                    entail a great deal of damage. <br></p>
+                <br>
+
+                <p class="p1"> Maintaining Access with Metasploit <br> </p>
+                <p> Now that we’ve discussed what exactly is means to obtain persistent access, we can go ahead and try
+                    it for ourselves. Thankfully, Metasploit comes equipped to get the job done. First we’ll gain access
+                    to the victim PC, then we’ll establish our persistent access. Once that’s all done, we’ll restart
+                    the victim PC and reconnect to the backdoor!<br></p><br>
+
+                <p class="p1">Methods to Maintain access<br></p>
+                <p>In the previous section, we had seen that when the target user restarted the computer, we would lose
+                    our connection. We used a normal backdoor that's why, when the computer restarted, our backdoor
+                    would be terminated, the process would be terminated, and we would lose our connection. But in this
+                    section, we are going to discuss the methods that will allow us to maintain our access to the target
+                    computer. We are going to use a normal HTTP reverse Mterepreter undetectable backdoor that we
+                    created previously. We are going to inject it as a service so that it will run every time the target
+                    user run their computer and it will try to connect back to us at certain intervals. To do this, we
+                    will run background command and interact with the session on number 2.
+                    <br>
+                    <br>
+                    We are going to run a module using the command use exploit/windows/local/persistence. It is like a
+                    multi-handler module that comes with Metasploit. After this command, we will run the show options
+                    command to see what we need to configure, as shown in the following screenshot: <br>
+                </p>
+                <br>
+                <br>
+                <img src="/methods-to-maintain-access.png" alt="">
+                <br>
+                <br>
+                <p> The first thing that we are going to look at DELAY, it is the number of seconds during which the
+                    target will try to connect back to us. It is set as 10, that means every 10 seconds, the target
+                    computer will try to connect back to us. Now, we are going to set EXE_NAME. It is the name that will
+                    show up under the processes where the connection is responding back from. We will set EXE_NAME to
+                    browse.exe to make it less detectable. The command is as follows: <br></p><br><br>
+                <img src="/methods-to-maintain-access2.png" alt=""><br>
+                <br>
+                <p> The PATH where the backdoor or payload will be installed, and it will stay the same. The REG_NAME is
+                    the register entry, and it will also stay the same. The SESSION specifies the session, if we run the
+                    session -l command, it will list of the available sessions, as shown in the following screenshot:
+                    <br>
+                </p><br><br>
+                <img src="/methods-to-maintain-access3.png" alt=""><br><br>
+                <p> Now we are going to set the SESSION as 2 using the following command: <br></p><br><br>
+                <img src="/methods-to-maintain-access4.png" alt=""><br><br>
+                <p> The STARTUP will be left as USER, for the user privileges. Now, we are going to run show options. In
+                    the following screenshot, we can see that browser.exe and session number 2 are set properly: <br>
+                </p><br><br>
+
+                <img src="/methods-to-maintain-access5.png" alt=""><br><br>
+                <p> Now, we are going to specify the payload that will be injected as a service. To do this we will run
+                    the show advanced command, and it will show us the advanced options that we can set up for this
+                    particular module. In the following screenshot, we are interested in EXE::Custom, which indicates
+                    that we are going to use a custom .exe to run and inject into the target computer as a service: <br>
+                </p><br><br>
+                <img src="/methods-to-maintain-access6.png" alt=""><br><br>
+                <p> We are going to set EXE::Custom to /var/www/html/backdoor.exe, so that we can run our backdoor that
+                    stored in /var/www/html/backdoor.exe. The command is as follows : <br></p><br><br>
+                <img src="/methods-to-maintain-access7.png" alt=""><br><br>
+                <p> Now, we will run show advanced command, and see that it was set up properly, as shown in the
+                    following screenshot: <br></p><br><br>
+                <img src="/methods-to-maintain-access8.png" alt=""><br><br>
+                <p> Now, we are going to run exploit command. It will upload /var/www/html/backdoor.exe onto the target
+                    computer, using the session that we specified, which is 2. In the following screenshot, we can see
+                    that it has been uploaded and installed: <br></p><br><br>
+                <img src="/methods-to-maintain-access9.png" alt=""><br><br>
+                <p> If we don't want the backdoor on the target computer anymore, we can use the resource file to delete
+                    it. We can store the RC file as shown in the preceding screenshot into the Leafpad so that we can
+                    run it in the future and delete our backdoor.
+                    <br>
+                    <br>
+                    If we run session -l command, it will show the available sessions, and we can interact with it.
+                    Using the session -k command, we can kill that session.
+                    <br>
+                    <br>
+                    Now, if we run list command, we will see that we have no connection with the target computer. Using
+                    our exploit multi-handler, we can listen for an incoming connection.
+                    <br>
+                    <br>
+                    If we run exploit, and the hacked computer is already booted, we will get a connection straightway,
+                    because our target has been injected into the target computer on port 8080 on reverse_http. Now to
+                    make sure, we will start our Window machine. To make sure that we will always have a connection to
+                    it, we are going to restart the target Windows computer. At every 10 seconds, our Kali machine will
+                    try to connect back to it, no matter how many times the Windows machine is shut down or restarted.
+                    We will now run our Meterpreter handler and wait for a connection. And then run the exploit command
+                    to listen, it will take a maximum of 10 seconds to get a connection back. In the following
+                    screenshot, we can see that we received a connection to the target computer, and now we have full
+                    access to that computer:<br>
+                </p><br><br>
+                <img src="/methods-to-maintain-access10.png" alt=""><br><br>
+
+                <p class="p1">The 5 Phases of Hacking: Maintaining Access<br></p><br><br>
+                <br>
+                <h3 id="serviceh">Stealth : <br></h3>
+
+                <p> The first way a hacker maintains persistence is to not be detected. After all, if the user or IT
+                    staff detects the intrusion, they will deal with it quickly. Therefore, for example, if a user opens
+                    an email attachment (with malware), the malware is typically designed to run in the background or in
+                    a small window behind the main window. Likewise, malware is often encoded to avoid detection by
+                    scanners looking for specific known signatures.
+                    <br>
+                    <br>
+                    It’s also critical for attackers to be stealthy in their actions. When scanning a network for other
+                    targets, they often slow down scans to a trickle of packets. While this can take longer (hours in
+                    some cases), they can avoid attracting suspicion from network intrusion tools and IT staff.
+                    <br>
+                    <br>
+                    When a target is discovered with information the hacker wants to steal, they often use very slow
+                    methods to extract the data from the server or computer. They don’t want their actions to burden the
+                    machine and possibly cause it to slow down, and they want the data to be mixed in with all of the
+                    legitimate data on the network to avoid detection.
+                    <br>
+                    <br>
+                    They also make sure the connection from the target to their collection machines waiting outside is
+                    established from the inside out, so it looks like legitimate traffic. In cases of extreme stealth,
+                    hackers will sometimes hide their data in innocuous-looking Domain Name Server (DNS) requests or web
+                    service requests rather than using an obvious file transfer protocol (FTP).<br>
+                </p>
+                <br>
+                <h3 id="serviceh">Privilege Escalation : <br></h3>
+                <p> Once hackers have infiltrated a server or PC, it is common to immediately try to get higher-level
+                    permissions on that machine. This is called privilege escalation and serves two purposes.
+                    <br>
+                    <br>
+                    First, the hacker can establish a new account as the server administrator with a unique ID and
+                    password. This allows the hacker to simply log in for access on the next visit, rather than trying
+                    to inject malware each time.
+                    <br>
+                    <br>
+                    It also allows the hacker to install and run even more software on the machine. This is useful for
+                    scanning other machines in the environment and subsequently hacking into them as well.
+                    <br>
+                    <br>
+                    Privilege escalation is also used at the network level. For example, if hackers can get into a
+                    Windows Active Directory server and escalate privileges to the administrator, they can access any
+                    machine in the network. Likewise, if a hacker gets administrative privileges in routers or switches,
+                    they can make changes to the infrastructure to access remote segments in other parts of the
+                    organization. <br>
+                </p>
+                <br>
+                <h3 id="serviceh"> Backdoors : <br></h3>
+                <p>The hacker may install software called a “backdoor,” which allows the hacker to remotely log into a
+                    server or computer without detection. Some backdoors have also been discovered in routers and
+                    switches as well.
+                    <br>
+                    <br>
+                    Even with all of this, it’s often difficult for backdoor software to survive multiple software
+                    patches and revisions, especially if the operating system is upgraded. Therefore, hackers install
+                    “rootkits." These are malware packages installed in the kernel level of the machine and boot up
+                    before the operating system.
+                    <br>
+                    <br>
+                    Therefore, even if the operating system is completely reinstalled, the hacker maintains access. Some
+                    rootkits developed by nation-states are installed in the boot sector of the hard drive, so they can
+                    even survive entire disk reformatting.
+                    <br>
+                    <br>
+                    In order to avoid detection by virus scanners on computers, some modern malware packages are built
+                    to run in memory only without ever writing a file to disk (which could be detected). These malware
+                    executables are often launched by rootkits. They run outside the operating system, so they are very
+                    difficult to detect by anti-virus software running inside the operating system.<br>
+                </p>
+                <br>
+                <h3 id="serviceh"> Covering Tracks : <br></h3>
+                <p> Another area that sophisticated hackers concentrate on is to hide any evidence that they have
+                    infiltrated a computer or system. In fact, if they can successfully hide their presence and delete
+                    malware as they depart, an attack might never be detected.
+                    <br>
+                    <br>
+                    Hackers do this by trying to locate every log and file that would maintain some record of their
+                    presence or movement. For example, Windows and Linux machines keep logs of all logins and actions
+                    taken on the computer. These are intended for troubleshooting but can be used for forensic purposes
+                    to detect illegal entry. Hackers know this, so they need to deal with these logs.
+                    <br>
+                    <br>
+                    The easiest course of action for a hacker is to simply delete the log, but this would cause
+                    suspicion. Some hackers simply edit the logs to remove only the entries showing their presence.
+                    However, an astute researcher would notice a gap in the log time stamps.
+                    <br>
+                    <br>
+                    Therefore, advanced hackers will replace a section of the log with a previous section with updated
+                    timestamps. Even this can be detected, but with much greater difficulty. Even with these
+                    precautions, an attacker needs to take additional steps to remove evidence of the attack.
+                    <br>
+                    <br>
+                    Windows machines not only have logs, but also an index file database of all software that was ever
+                    installed (even after it is deleted). That would need to be cleared as well. Further, some graphics
+                    processors have the memory of screen actions that would also need to be deleted.<br>
+                </p>
+
+                <br>
+                <h3 id="serviceh"> Determined Hackers Will Gain and Maintain Access : <br></h3>
+                <p> The most sophisticated are excellent at hiding their presence in an attack. This not only allows
+                    them more time on target (loitering time), but also helps to hide the intrusion long after they have
+                    left the target. This allows them to make repeated visits if necessary. More importantly, the attack
+                    signatures are not picked up by threat researchers and published to other victims.
+                    <br>
+                    <br>
+                    In every case, security engineers can take steps to reduce the risk of attack and intrusion.
+                    However, it takes good training to do that.<br>
+                </p>
+                <br>
+                <br>
+
+                <p class="p1"> Conclusion <br></p><br>
+                <p> “Maintaining Access” is a phase of the pentest cycle which has a very concrete purpose – to allow
+                    the pentester to linger in the targeted systems until he acquires what information he considers to
+                    be valuable and then manages to extract it successfully from the system. However, as is often the
+                    case, it is easier said than done. Let’s compare it to being in someone else’s house without his
+                    permission – it is one thing to enter his home and walk around for a while, but it is another matter
+                    when you want to settle in for a little longer without attracting the owner’s attention. While such
+                    a Houdini-like trick may be a tad easier in the cyber world, it remains challenging. Challenging but
+                    not impossible.<br></p><br><br>
+            </div>
+
+
+
+
+            <div id="part105" class="part">
+                <p>Cover Tracks</p>
+                <p>Once the hacker gains access, they cover their tracks to escape the security personnel. They do this
+                    by clearing the cache and cookies, tampering the log files, and closing all the open ports. This
+                    step is important because it clears the system information making hacking a great deal harder to
+                    track.</p><br>
+                <p>Covering tracks is one of the most stage during system hacking. during this stage, the attacker tries
+                    to cover and avoid being detected, or “traced out,” by covering all track, or logs, generated while
+                    gaining access to the target networks or computer.<br></p><br>
+                <p> Covering Tracks we’ve got how an attacker hides malicious files on a target computer using various
+                    stenographic techniques, NTFS streams, among others, to keep up future access to the target. Now
+                    that the attacker has succeeded in performing this malicious operation, following step are to get
+                    rid of any resultant traces/tracks within the system, Covering tracks is one in all the most stage
+                    during system hacking. during this stage, the attacker tries to cover and avoid being detected, or
+                    “traced out,” by covering all “tracks,” or logs, generated while gaining access to the target
+                    network or computer. let’s see how the attacker removes traces of an attack within the target
+                    computer.
+                    <br>
+                    <br>
+                    Erasing evidence may be a requirement for an attacker who would love to stay obscure. this can be
+                    one method to evade a traceback. This starts with erasing the contaminated logs and possible error
+                    messages generated within the attack process. Then, attackers make changes within the system
+                    configuration in order that it does riot log future activities, By manipulating and tweaking the
+                    event logs, attackers trick the supervisor in believing that there’s no malicious activity within
+                    the system, which no intrusion or compromise has actually taken place.
+                    <br>
+                    <br>
+                    Because the primary thing a supervisor does in monitoring unusual activity is to see the system log
+                    files, it’s common for intruders to use a utility to change these logs. in some cases, rootkits can
+                    disable and discard all existing rugs. Attackers remove only those portions of logs that may reveal
+                    their presence if they shall use the system for an extended period as a launch base for the longer
+                    term exploitation.
+                    <br>
+                    <br>
+                    It is imperative for attackers to form the system appear because it did before access was gained and
+                    a backdoor established. this enables them to vary any file attributes back to their original state.
+                    Information listed, like file size and date, simply attributes information contained within the
+                    file.
+                    <br>
+                    <br>
+                    Protecting against attackers trying to hide their tracks by changing file information is often
+                    difficult. However, it’s possible to detect whether an attacker has done so by calculating the
+                    filters cryptographic hash, this sort of hash could be a calculation of the whole file before
+                    encryption.<br>
+                </p><br>
+
+                <h3 id="serviceh">The attacker can manipulate the log files with the assistance of :</h3><br>
+                <p> – SECEVENT.EVT (security): failed logins, accessing files without privileges <br><br>
+                    – SYSEVENT.EVT (system): Driver failure, things not operating correctly <br><br>
+                    – APPEVENT.EVT (applications)<br></p><br><br>
+
+                <h3 id="serviceh">Techniques used for covering Tracks</h3><br>
+                <p> The main activities that an attacker performs toward removing his/her traces on the pc are:
+                    <br><br>
+                    – Disable auditing: An attacker disables auditing features of the target system <br><br>
+                    – Clearing logs: An attacker clears/deletes the system log entries like his/her activities <br><br>
+                    – Manipulating logs: An attacker manipulates logs in such some way that he/she won’t be caught in
+                    legal actions
+                    <br><br>
+                    Thus, the whole job of an attacker involves not only compromising the system successfully, but also
+                    disabling logging, clearing Log files, eliminating evidence, planting additional tools, and covering
+                    his/her tracks. <br>
+                </p><br>
+<br>
+                
+                    <h3 id="serviceh"> Auditpol Source:  </h3><br>
+    
+                <p>One of the first steps for an attacker who has command-line capability is to see the auditing status
+                    of the target system, locate sensitive files (such as password files), and implant automatic
+                    information-gathering tools (such as a keystroke logger or network sniffer).
+                    <br>
+                    <br>
+                    Windows records certain events to the Event Log (or associated Syslog). The log is often set to send
+                    alerts (email, pager, then on) to the computer user. Therefore, the attacker will want to know the
+                    auditing status of the system he/she is trying to compromise before proceeding with his/her plans.
+                    <br>
+                    <br>
+                    Auditpol.exe is the instruction utility tool to alter Audit Security settings at the category and
+                    sub-category levels. Attackers can use Auditpol to enable or disable security auditing on local or
+                    remote systems and to regulate the audit criteria for various categories of security events. <br>
+                </p><br>
+
+                <p class="p1">Penetration Testing: Covering Tracks</p><br>
+                <p>“Covering Tracks” is the final stage of a penetration test as a process – all the rest is paperwork.
+                    In a nutshell, its goal is to erase the digital signs left out by the pen tester during the earlier
+                    stages of the test. These digital signs, in essence, prove the pen tester’s presence in the targeted
+                    computer system.
+                    <br>
+                    <br>
+                    Whereas in the phases previous to this one the pen tester successfully managed to avoid detection by
+                    firewalls and intrusion detection systems, the purpose of this phase is to cover up all the little
+                    clues that would give away the nature of his deeds. “Covering Tracks” consists of 1) measures for
+                    the prevention of real-time detection (Anti-Incident Response), and 2) measures for the prevention
+                    of digital evidence collection during a possible post factum inquiry (Anti-Forensics).<br>
+                </p><br>
+
+                <p>Diagram: “The Last 3 Phases of Penetration Testing with Focus on Covering Tracks.”<br></p><br>
+                <img src="/ct1.png" alt=""><br><br>
+                <h3 id="serviceh">Anti-Incident Response</h3><br>
+                <p>Its purpose is to confuse, out-maneuver and disrupt the incident response team at the targeted
+                    company. Moreover, anti-incident response activities ensure a pen tester would have the opportunity
+                    to gain a long-term foothold on the attacked network even if he has already been detected.
+                    <br>
+                    <br>
+                    Some important components of a workable anti-incident response are:
+                    <br>
+                    <br>
+                    Secretly deploy backdoors
+                    <br>
+                    Set up an agile lateral movement infrastructure
+                    <br>
+                    The number of infected hosts should not be too large, and they should constantly be updated
+                    <br>
+                    The more varied the malware on the network, the better
+                    <br>
+                    Pick up the pace to prevent responders or investigators from keeping up with what is going on
+                    <br>
+                    Busy servers offer the perfect cover for internal hop-points
+                    <br>
+                    Busy file servers may be ideal for data staging areas
+                    <br>
+                    Establishing a VPN for C2 communication may facilitate bypassing some network monitoring measures
+                    <br>
+                    Camouflage the source of malware transmission
+                    <br>
+                    <br>
+                </p><br>
+
+                <h3 id="serviceh">Anti-Forensics</h3><br>
+       
+                <p>Computer forensics is a discipline whose purpose is to allow forensic experts to acquire, preserve,
+                    analyze and present digital evidence in the court of law. Anti-forensics is a notion encompassing
+                    all methods and tools which exist to delete, change or conceal digital evidence, with the ultimate
+                    goal being the manipulation, destruction or erasure of digital evidence. Marc Rogers, a professor in
+                    the Computer Technology Department at Purdue University, formulates anti-forensics as: “Attempts to
+                    negatively affect the existence, amount and/or quality of evidence from a crime scene, or make the
+                    analysis and examination of evidence difficult or impossible to conduct.”
+                    <br>
+                    <br>
+                    The term itself suggests that it has something to do with actions or techniques whose leitmotiv is
+                    to obstruct an eventual digital investigation and to diminish the quality and quantity of digital
+                    evidence. Typical users of anti-forensic tools and techniques are hackers, cyber terrorists, online
+                    pedophiles, counterfeiters and other cyber criminals who want to remove existing traces of nefarious
+                    computer activities which may incriminate them. Nevertheless, pen testers have recourse to the
+                    antipode of the digital forensic science as well to do what they do best – conduct a thorough test
+                    of the security capabilities of particular computer systems.
+                    <br>
+                    <br>
+                    With the help of automated tools, the pen tester can mask the attack and create backdoors for
+                    further exploitation at the same time. The information security portal Security Wizardry has created
+                    a list of anti-forensic tools which can be found here.<br>
+                </p><br><br>
+                <h3 id="serviceh">Deleting Evidence</h3><br>
+            
+                <p>A common delusion among persons who count on commercial disk cleaners or privacy protection tools to
+                    delete some data they do not want others to see is the belief that these tools remove everything
+                    from the hard disc once and for all. In fact, they can clean up the following kind of information:
+                    <br>
+                    <br>
+                    Cache and history for popular Web browsers
+                    Chat logs produced by Skype and some other popular instant messengers
+                    Provide “secure delete” option to wipe files
+                    Clean some (but almost never all) of the following: jumplists, thumbnails, registry items, Skype
+                    chatsync, etc.
+                    <br>
+                    <br>
+                    By utilizing specific forensic tools, a forensic expert can outsmart almost all clean-up programs.
+                    In reality, they can be an effective solution for casual observers, but not that effective
+                    anti-forensic measure when we take into account the amount of information that pass through, namely:
+                    thumbnails cache, Windows jumplists, browsing cache and history, chatsync, undeleted files being
+                    currently opened at the moment of deletion, deleted files with left corresponding Registry entries
+                    intact, etc.
+                    <br>
+                    <br>
+                    Pictures of interest, for instance, can be recovered because, even if the original image has been
+                    deleted, a smaller version of this picture should still exist in Windows Thumbnails. And even if the
+                    thumbnail has been removed, forensic examiners could attempt to restore it via file carving. Windows
+                    Vista, Windows 7, 8, 8.1 and Windows 10 usually keep their thumbnails stored in one location (i.e.,
+                    %userprofile%AppDataLocalMicrosoftWindowsExplorer). Alternatively, there are automated tools
+                    designed to perform that task.<br>
+                </p><br><br>
+
+                <h3 id="serviceh">Moving, Hiding, Altering or Renaming Files</h3><br>
+            
+                <p>Although it may seem naive, some wrongdoers use these techniques in the hope of evading justice. In
+                    this case, ‘covering tracks’ can take the form of moving given files (for instance, those that
+                    contain conversation histories), changing extensions or renaming.
+                    <br>
+                    <br>
+                    It is an arduous task to retrieve and rearrange the hidden data. Some programs can split files into
+                    small partitions and conceal each partition at the end of other files. With the help of the right
+                    programs, a pen tester can take advantage of an unused file space dubbed slack space, thereby hiding
+                    important information in plain sight.
+                    <br>
+                    <br>
+                    Similarly, a pen tester can hide one file inside another (more or less like steganography) – a
+                    method which copes well with executable files, in particular. In this regard, J. Strickland
+                    mentioned in his article “How Computer Forensics Works“: “Programs called packers can insert
+                    executable files into other kinds of files, while tools called binders can bind multiple executable
+                    files together.”
+                    <br>
+                    <br>
+                    Timestamping: More often than not, the people involved in a cyber investigation do not have the time
+                    to examine one by one all the files residing in a computer system. One approach which allows them to
+                    prioritize their search of information potentially relevant to the investigation is to arrange this
+                    information in chronological order so that they can focus on the important pieces of data occurred
+                    around the moment of the cybercrime (if it is known). Criminals, however, try to tackle this
+                    approach by modifying the metadata about any files they want. In most cases, they change the date on
+                    which each file was created, last accessed, or last modified. This effective anti-forensic technique
+                    is named time stopping, and tools to detect its creations do exist.
+                    <br>
+                    <br>
+                    Among the anti-forensic inventory, there are tools that can alter the information in file headers.
+                    Once the transformation is completed, the computer will think it is a different type of file (for
+                    example, to rename an mp3 file so that it will appear as a .gif one).<br>
+                </p><br><br>
+
+
+                <h3 id="serviceh">Log Tampering</h3><br>
+     
+                <p>In Windows-based computer systems, all of the log files are stored in the event viewer, easily
+                    findable via the “Search” bar. In almost all Linux and UNIX operating systems the log files are
+                    located in the /var/log directory, and in MAC operating systems one should open the Finder, click
+                    “Go to Folder” in the Go menu, and type in /Library/Logs and press Enter to activate the Log File
+                    Management which will display all log files.<br></p><br>
+                <img src="/ct2.jpg" alt=""><br><br>
+                <p>If administrators want to check for malicious activities within the system for which they are
+                    responsible, they simply examine the log files. There are two kinds of log files: system generated
+                    and application generated.
+                    <br>
+                    <br>
+                    When it comes to log manipulation, the attacker usually has two options. The first option is to
+                    delete the log, and the second one is to alter its content. Deletion of log files and replacement of
+                    system binaries with Trojan malware ensures that the security staff employed by the targeted company
+                    will not detect evidence of the cyber intrusion.
+                    <br>
+                    <br>
+                    The first choice – to delete the log files – is not always the ultimate solution to undetectability,
+                    since the removal of such information might create a gap between logs files and raise suspicion. One
+                    look at the processes and log files would be enough for a system administrator at the target’s
+                    premises to establish the existence of any malicious activities. So, chances are the system
+                    administrator may notice when a log file is deleted. Log files are used to detect malicious
+                    activities, but that is only one of their purposes; they serve as a warning system on the actual
+                    state and health of the system, and any irregularities with their availability or attributes may
+                    draw unwanted attention. Presumably, it will be prudent on the part of the attacker if he decides to
+                    wait for a time when the probability of system administrators to check the log data is minimal, for
+                    instance, during nighttime or weekends.<br>
+                </p><br>
+
+<br>
+                <h3 id="serviceh">Conclusion </h3><br>
+            
+                <p>Being stealthy is a great precondition for success. For that reason, avoiding detection until the
+                    penetration test is over is sometimes not enough (i.e., the anti-response part). Sometimes it is
+                    very important that the cyber attack as a fact will continue to remain unknown to the victim after
+                    its end, regardless whether we talk about a pen test or an actual cybercrime. And if you happen to
+                    set off the radar detection, anti-forensics should come to the rescue.
+<br>
+<br>
+                    Some people undeservingly tend to underestimate the significance of “Covering Tracks” phase. Perhaps
+                    they think that their job is done when the objective of the mission is completed (e.g., to obtain a
+                    bundle of valuable documents). However, if you want to get the knack of penetrating sophisticated
+                    systems, it is imperative to learn how to do so in as low-profile manner as possible. And that is
+                    exactly where “Covering Tracks” phase comes into play. It is simply a fail-safe mechanism for pen
+                    testers and hackers which would keep them out of trouble, both immediate and such that might occur
+                    during an investigation.<br></p><br><br>
+                    <br>
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="Service.js"></script>
+</body>
+
+</html>

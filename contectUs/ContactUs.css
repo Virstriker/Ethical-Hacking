@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+/* Navigation css start -------------------------------------------------------------------------------------------*/
+
+
+/* navigrtion css End -------------------------------------------------------------------------------------------*/
+/* Contact css Start -------------------------------------------------------------------------------------------*/
+#dark{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 90vh;
+    z-index: -1;
+    opacity: 80%;
+}
+#container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+    overflow: hidden;
+
+}
+#subcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    animation: fade;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes fade {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+    
+}
+#up1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#up1 p:nth-child(1){
+    font-size: xx-large;
+    margin-bottom: 30px;
+}
+#up1 p:nth-child(2){
+    font-size: 17px;
+}
+#down1{
+    display: flex;
+    flex-direction: row;
+}
+.iimg{
+    width: 50px;
+    margin: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 500px;
+}
+.add{
+    color: rgb(0, 191, 255);
+    font-size: large;
+}
+#left1 p:nth-child(2){
+    width: 50%;
+}
+#right1 form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+#right1 p {
+    text-align: center;
+    font-size: xx-large;
+    margin: 10px 0px;
+}
+.btn11{
+    margin: 10px;
+    border: none;
+    width: 300px;
+    border-bottom: 2px solid gray;
+    padding: 5px 0px;
+    font-size: 15px;
+    resize: none;
+}
+#btn12{
+    border: none;
+    background-color: rgb(255, 69, 69);
+    padding: 5px;
+    box-shadow: 2px 2px 5px white inset;
+    margin: 10px 0px;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* Contact css End -------------------------------------------------------------------------------------------*/

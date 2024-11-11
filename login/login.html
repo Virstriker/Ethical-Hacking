@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="navigation">
+        <nav>
+            <div id="logo">
+                <img src="pngegg.png" alt="">
+                <span>ETL</span>
+            </div>
+            <div id="navButton">
+                <a href="\EthicalHacking.html">Home</a>
+                <a href="\aboutUs\aboutUs.html">About Us</a>
+                <a href="\services\Service.html">Services</a>
+                <a href="#">Pages</a>
+                <a href="#">Blog</a>
+                <a href="\contectUs\ContactUs.html">Contact Us</a>
+                <a href="login.html">Log In</a>
+            </div>
+        </nav>
+    </div>
+    <!-- nav end -->
+    <div class="container1">
+        <!-- Log in page start -->
+        <span id="dark">
+        </span>
+        <div id="subcontainer">
+            <div id="login_txt">
+                <span >log into your account</span>
+            </div>
+            <div id="login_area">
+                <div id="left1">
+                    <input type="email" name="email" id="_email" placeholder="Username" class="ep">
+                    <input type="password" name="password" id="pass" placeholder="Password" class="ep">
+                    <a href="#" id="forgot">Forgot Password?</a>
+                    <a href="#" id="log">Log In</a>
+                </div>
+                <div id="right1">
+                    <a href="#"><img src="google.png" alt="">Google</a>
+                    <a href="#"><img src="facebook.png" alt="">Facebook</a>
+                    <a href="#"><img src="twitter.png" alt="">Twitter</a>
+                    <a href="#"><img src="git.png" alt="">Github</a>
+                </div>
+            </div>
+            <div id="sign_up_txt">
+                <span>Need an account? <a href="#" id="sin" onclick="clickme()">Sign Up</a></span>
+            </div>
+        </div>
+        <!-- Log in page End -->
+        <!-- Register page Start -->
+        <div id="subcontainer1" style="display: none;">
+            <div id="acc_txt">
+                <span>Creat New Account</span>
+            </div>
+            <div id="acc_area">
+                <input type="text" name="username" id="usr" class="new_acc" placeholder="Username">
+                <input type="email" name="email1" id="email" class="new_acc" placeholder="Email">
+                <input type="password" name="_pass" id="pass1" class="new_acc" placeholder="Password">
+                <input type="password" name="ConfirmPass" id="C_pass1" class="new_acc" placeholder="Confirm Password">
+                <a href="#">Creat Account</a>
+            </div>
+            <div id="alr_acc">
+                <p>Alredy have an account? <a href="#" onclick="clickme1()">Log In</a></p>
+            </div>
+        </div>
+        <!-- Register page end -->
+
+    </div>
+
+
+
+
+
+    <script src="login.js"></script>
+</body>
+</html>
